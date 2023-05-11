@@ -21,8 +21,8 @@ Route::get('/', function () {
 });
 
 //Route untuk session
-Route::get('/session/show', [SessionController::class, 'show']);
 Route::get('/session', [SessionController::class, 'create']);
+Route::get('/session/show', [SessionController::class, 'show']);
 Route::get('/session/delete', [sessionController::class, 'delete']);
 // menampilkan nama pegawai
 Route::get('/pegawai/{nama}', [pegawaiController::class, 'index']);

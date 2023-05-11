@@ -32,9 +32,10 @@ class PegawaiController extends Controller
             'nama' => 'required|min:5|max:20',
             'alamat' => 'required|alpha_num'
         ], $messages);
+
         $nama = $request->input('nama');
         $alamat = $request->input('alamat');
 
-        return "Nama : " . $nama . ", Alamat : " . $alamat;
+        return "Nama : " . $nama . "<br>" . "Alamat : " . $alamat;
     }
 }
